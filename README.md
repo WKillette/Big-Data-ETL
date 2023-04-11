@@ -6,16 +6,16 @@ In this assignment, you will put your ETL skills to the test. Many of Amazon's s
 
 This Challenge contains two parts. Part 1 is required. Part 2 is optional but highly recommended to strengthen your new skills.
 
-    Part 1: Extract two Amazon customer review datasets, transform each dataset into four DataFrames, and load the DataFrames into an RDS instance.
+   Part 1: Extract two Amazon customer review datasets, transform each dataset into four DataFrames, and load the DataFrames into an RDS instance.
 
-    Part 2: Extract two Amazon customer review datasets and use either SQL or PySpark to analyze whether reviews from Amazon's Vine program are trustworthy.
+   Part 2: Extract two Amazon customer review datasets and use either SQL or PySpark to analyze whether reviews from Amazon's Vine program are trustworthy.
 
 ## Before You Begin
-    1. Create a new repository for this project called "Big-Data-ETL". Do not add this homework to an existing repository.
+   1. Create a new repository for this project called "Big-Data-ETL". Do not add this homework to an existing repository.
 
-    2. Clone the new repository to your computer.
+   2. Clone the new repository to your computer.
 
-    3. Inside your local Git repository, create two folders, "part-1" and "part-2", corresponding to the two parts. If you are not planning on doing "part-2" then create the "part-1" folder only.
+   3. Inside your local Git repository, create two folders, "part-1" and "part-2", corresponding to the two parts. If you are not planning on doing "part-2" then create the "part-1" folder only.
 
 ## Files
 Download the following files to help you get started:
@@ -25,29 +25,29 @@ Module 22 Challenge filesLinks to an external site.
 ## Instructions
 
 ## Part 1
-    1.  Upload the `part_one_starter_code.ipynb` into Google Colab and create a duplicate of this file.
+   1.  Upload the `part_one_starter_code.ipynb` into Google Colab and create a duplicate of this file.
 
-    2. Explore the Amazon Reviews Links to an external site.datasets and pick two datasets to perform ETL.
+   2. Explore the Amazon Reviews Links to an external site.datasets and pick two datasets to perform ETL.
 
-    3. Rename each `part_one_starter_code.ipynb` file according to the dataset you are using. For example, if you are going to use the Video Game reviews Links to an external site.file, rename file, `part_one_video_games.ipynb`. Repeat the process for the duplicate file you created in Step 2.
+   3. Rename each `part_one_starter_code.ipynb` file according to the dataset you are using. For example, if you are going to use the Video Game reviews Links to an external site.file, rename file, `part_one_video_games.ipynb`. Repeat the process for the duplicate file you created in Step 2.
 
 ### Extract the Data
 
-    1. Read in each dataset using the correct `header` and `sep` parameters.
+   1. Read in each dataset using the correct `header` and `sep` parameters.
 
-    2. Get the number of rows in the dataset.
+   2. Get the number of rows in the dataset.
 
 ### Transform the Data
 
 For each dataset use the `schema.sql` file located in the Resources folder of the `Starter_Code.zip` file to create the four DataFrames as follows:
 
-    1. Create the "review_id_df" DataFrame with the appropriate columns and data types.
+   1. Create the "review_id_df" DataFrame with the appropriate columns and data types.
 
-    2. Create the "products_df" DataFrame that drops the duplicates in the "product_id" and "product_title columns.
+   2. Create the "products_df" DataFrame that drops the duplicates in the "product_id" and "product_title columns.
 
-    3. Create the "customers_df" DataFrame that groups the data on the "customer_id" by the number of times a customer reviewed a product.
+   3. Create the "customers_df" DataFrame that groups the data on the "customer_id" by the number of times a customer reviewed a product.
 
-    4. Create the "vine_df" DataFrame that has the "review_id", "star_rating", "helpful_votes", "total_votes", and "vine" columns.
+   4. Create the "vine_df" DataFrame that has the "review_id", "star_rating", "helpful_votes", "total_votes", and "vine" columns.
 
 ### Load the Data into an RDS Instance
 
