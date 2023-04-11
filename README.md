@@ -6,9 +6,9 @@ In this assignment, you will put your ETL skills to the test. Many of Amazon's s
 
 This Challenge contains two parts. Part 1 is required. Part 2 is optional but highly recommended to strengthen your new skills.
 
-   Part 1: Extract two Amazon customer review datasets, transform each dataset into four DataFrames, and load the DataFrames into an RDS instance.
+  * Part 1: Extract two Amazon customer review datasets, transform each dataset into four DataFrames, and load the DataFrames into an RDS instance.
 
-   Part 2: Extract two Amazon customer review datasets and use either SQL or PySpark to analyze whether reviews from Amazon's Vine program are trustworthy.
+  * Part 2: Extract two Amazon customer review datasets and use either SQL or PySpark to analyze whether reviews from Amazon's Vine program are trustworthy.
 
 ## Before You Begin
    1. Create a new repository for this project called "Big-Data-ETL". Do not add this homework to an existing repository.
